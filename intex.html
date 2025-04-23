@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/ca.png">
+  <title>Mi Agenda</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mi agenda</h1>
+
+  <!-- Tareas Realizadas -->
+  <section class="bloque">
+    <h2>Tareas Realizadas</h2>
+    <input type="text" id="tareaRealizada" placeholder="Descripción de la tarea">
+    <button onclick="agregarTareaRealizada()">Guardar</button>
+  </section>
+
+  <!-- Reuniones -->
+  <section class="bloque">
+    <h2>Reuniones</h2>
+    <input type="date" id="fechaReunion">
+    <input type="text" id="descripcionReunion" placeholder="Descripción de la reunión">
+    <button onclick="agregarReunion()">Guardar</button>
+  </section>
+
+  <!-- Tareas Pendientes -->
+  <section class="bloque">
+    <h2>Tareas Pendientes</h2>
+    <input type="date" id="fechaPendiente">
+    <input type="text" id="tituloTarea" placeholder="Título de la tarea">
+    <input type="text" id="prioridadTarea" placeholder="Prioridad (Alta, Media, Baja)">
+    <button onclick="agregarPendiente()">Guardar</button>
+  </section>
+
+  <!-- Calendario -->
+  <section class="bloque">
+    <h2>Calendario</h2>
+    <div id="calendar"></div>
+  </section>
+<!-- 
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js"></script> -->
+  <!-- Tu lógica JS -->
+  <script src="script.js"></script>
+</body>
+</html>
